@@ -1,0 +1,85 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'sliders';
+@import 'socials';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  @include font($primary-ff, 1.4rem, $secondary-color, $lh: 1.7);
+  padding: 0;
+  background-color: $body-bg;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  margin: 0;
+  line-height: 80px;
+}
+  
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 15px;
+
+  &--intro {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.section {
+  position: relative;
+
+  &--intro {
+    min-height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: $border-width solid $border-color;
+  @include font(inherit, 2rem, $secondary-color);
+  padding: 25px 40px;
+  text-transform: uppercase;
+
+  &__line {
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background-color: $secondary-color;
+    margin-left: 20px;
+  }
+
+  &__toshop {
+    text-transform: none;
+    border: none;
+    color: $light-gray;
+    letter-spacing: .28em;
+    padding: 25px 0;
+  }
+}
+
+@import 'partials/header';
+@import 'partials/intro';
+// @import 'partials/header';
+// @import 'partials/header';
