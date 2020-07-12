@@ -68,6 +68,7 @@ h1 {
     height: 2px;
     background-color: $secondary-color;
     margin-left: 20px;
+    @include tr;
   }
 
   &__toshop {
@@ -76,7 +77,23 @@ h1 {
     color: $light-gray;
     letter-spacing: .28em;
     padding: 25px 0;
+    @include hover {
+      opacity: .6;
+    }
   }
+  &--intro {
+    @include hover {
+      color: $primary-color;
+      background-color: $secondary-color;
+
+      & .btn__line--intro {
+          background-color: $primary-color;
+        
+      }
+    }
+    
+  }
+  
 }
 
 @import 'partials/header';

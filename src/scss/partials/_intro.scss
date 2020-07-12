@@ -39,8 +39,13 @@
         letter-spacing: .28em;
         margin-bottom: 60px;
     }
-    &__toshop {
 
+    &__down {
+        fill: $secondary-color;
+        @include posA(90%);
+        @include hover {
+            opacity: .6;
+        }
     }
 }
 
