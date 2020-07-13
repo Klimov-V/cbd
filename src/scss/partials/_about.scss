@@ -1,0 +1,60 @@
+.about {
+    background-color: $light-gray;
+
+    &__header {
+        display: flex;
+        border-bottom: $border-width solid #ced6af;
+
+        label {
+            font-size: 3rem;
+            letter-spacing: .2em;
+            color: $dark;
+            margin-right: 95px;
+            border-bottom: $border-width solid #ced6af;
+
+            @include hover {
+                cursor: pointer;
+                border-bottom-color: $dark;
+            }
+        }
+    }
+
+    &__tab {
+        display: none;
+    }
+}
+.tab {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+    &__text {
+        max-width: 400px;
+        max-height: 635px;
+        overflow: hidden;
+    }
+    &__title{
+        @include font($fz: 2.4rem, $fc: $dark, $lh: 4rem);
+        letter-spacing: .2em;
+        margin-top: 45px;
+        max-width: 300px;
+    }
+    &__paragraph {
+        @include font($fz: 1.8rem, $fc: $primary-color, $fw:300, $lh: 4rem);
+        letter-spacing: .04em;
+        margin: 35px 0;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        
+        &-wrap {
+            max-width: 570px;
+            max-height: 300px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+    }
+}
