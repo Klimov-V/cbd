@@ -44,14 +44,6 @@ h1 {
 
 .section {
   position: relative;
-
-  &--intro {
-    min-height: 100vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 .btn {
@@ -98,5 +90,5 @@ h1 {
 
 @import 'partials/header';
 @import 'partials/intro';
-// @import 'partials/header';
+@import 'partials/sponsors';
 // @import 'partials/header';

@@ -1,4 +1,11 @@
 .intro {
+    min-height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
 
     &__side-container {
         position: absolute;
@@ -12,7 +19,7 @@
     &__side-line {
         width: 100px;
         height: 2px;
-        background-color: #fff;
+        background-color: $secondary-color;
         margin-right: 30px;
     }
     &__side-text {
