@@ -1,10 +1,11 @@
 .sponsors {
     padding: 100px 0;
+    background-color: $light-gray;
 
     &__wraper {
-        // border-image: url(../img/border.png) 12 round;
+        border: 12px solid transparent;
+        border-image: url(../img/border.png) 12 round;
         max-width: 690px;
-        max-height: 200px;
         margin: 0 auto;
         text-align: center;
     }
@@ -13,13 +14,13 @@
         text-transform: uppercase;
         color: $dark;
         font-size: 2.4rem;
-        line-height: 7.5rem;
         letter-spacing: 0.2em;
     }
     &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
     }
     &__item + &__item {
         margin-left: 50px;
