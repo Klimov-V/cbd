@@ -4,13 +4,6 @@
     &__header {
         display: flex;
 
-        // &:after {
-        //     content: "";
-        //     width: 100%;
-        //     height: 1px;
-        //     background-color: #ced6af;
-        // }
-
         label {
             font-size: 3rem;
             letter-spacing: .2em;
@@ -42,14 +35,12 @@
         overflow: hidden;
     }
     &__title{
-        @include font($fz: 2.4rem, $fc: $dark, $lh: 4rem);
-        letter-spacing: .2em;
+        @include font($fz: 2.4rem, $fc: $dark, $lh: 4rem, $ls: .2em);
         margin-top: 45px;
         max-width: 300px;
     }
     &__paragraph {
-        @include font($fz: 1.8rem, $fc: $primary-color, $fw:300, $lh: 4rem);
-        letter-spacing: .04em;
+        @include font($fz: 1.8rem, $fc: $primary-color, $fw:300, $lh: 4rem, $ls: .04em);
         margin: 35px 0;
     }
 

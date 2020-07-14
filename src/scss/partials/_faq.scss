@@ -1,0 +1,19 @@
+.faq {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+
+    &-header {
+        border: none;
+        background-color: transparent;
+    }
+    &-body {
+        @include font(inherit, 1.8rem, $dark, 300, 4rem, .04em);
+    }
+}
+.accordion {
+    max-width: 575px;
+}

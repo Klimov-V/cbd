@@ -24,8 +24,7 @@
     }
     &__side-text {
         text-transform: uppercase;
-        @include font ($fz: 2.6rem, $lh: 55px);
-        letter-spacing: .08em;
+        @include font ($fz: 2.6rem, $lh: 55px, $ls: .08em);
     }
 
     &__inner {

@@ -12,11 +12,11 @@ html {
   font-size: 10px;
 }
 body {
-  @include font($primary-ff, 1.4rem, $secondary-color, $lh: 1.7);
+  @include font($primary-ff, 1.4rem, $secondary-color, $lh: 1.7, $ls: .2em);
   padding: 0;
   background-color: $body-bg;
 }
-ul {
+ul {  
   list-style: none;
   padding: 0;
   margin: 0;
@@ -44,6 +44,10 @@ h1 {
 
 .section {
   position: relative;
+
+  &__title {
+    @include font(inherit, 3rem, $dark, 400, 7.5rem, .2em);
+  }
 }
 
 .btn {
@@ -85,11 +89,23 @@ h1 {
     }
     
   }
-  
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &-link {
+    border: none;
+    @include font(inherit, 1.8rem, $primary-color, 300, 7.5rem, .28em);
+    text-decoration: none;
+    &:hover {
+      color: $primary-hover;
+    }
+  }
 }
 
 @import 'partials/header';
 @import 'partials/intro';
 @import 'partials/sponsors';
 @import 'partials/about';
+@import 'partials/products';
 @import 'partials/faq';
