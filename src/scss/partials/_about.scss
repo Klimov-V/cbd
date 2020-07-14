@@ -3,7 +3,13 @@
 
     &__header {
         display: flex;
-        border-bottom: $border-width solid #ced6af;
+
+        // &:after {
+        //     content: "";
+        //     width: 100%;
+        //     height: 1px;
+        //     background-color: #ced6af;
+        // }
 
         label {
             font-size: 3rem;
@@ -11,6 +17,7 @@
             color: $dark;
             margin-right: 95px;
             border-bottom: $border-width solid #ced6af;
+            padding-bottom: 1px;
 
             @include hover {
                 cursor: pointer;
@@ -57,4 +64,32 @@
             overflow: hidden;
         }
     }
+}
+
+.nav {
+    
+    &-item {
+        font-size: 3rem;
+        letter-spacing: .2em;
+        color: $dark;
+        margin-right: 95px;
+        border-bottom: $border-width solid #ced6af;
+        margin-bottom: -1px;
+    }
+    &-tabs &-link.active {
+        border-color: transparent;
+        border-bottom-color: $dark;
+        background-color: transparent;
+        color: $dark;
+    }
+    &-tabs &-link:hover {
+        border-color: transparent;
+        border-bottom-color: $dark;
+        color: $dark;
+        @include tr;
+    }
+}
+
+.tab-content > .active {
+    display: flex;
 }
