@@ -1,0 +1,80 @@
+.footer {
+    padding-top: 150px;
+
+    &__colum {
+        border-top: $border-width solid $primary-color;
+        padding-top: 100px;
+    }
+    & .col-md-4 {
+        text-align: center;
+    }
+    &__link {
+        @include font(inherit, 1.4rem, $primary-color, 300, 4rem,.28em);
+        text-transform: uppercase;
+        @include hover {
+            color: $primary-light;
+        }
+    }
+
+    &__logo {
+        @include font(inherit, 6rem, $primary-color, 400, 5.5rem, 0);
+        text-transform: uppercase;
+        margin-top: -30px;
+    }
+
+    &__vertical-line {
+        margin: 0 auto;
+        width: 1px;
+        height: 55px;
+        background-color: $primary-color;
+    }
+
+}
+.subscribe{
+
+    &__title {
+        @include font(inherit, 1.8rem, $dark, 400, 7.5rem, .15em);
+        text-transform: uppercase;
+    }
+    &__svg {
+        fill: $primary-color;
+    }
+    &__form {
+        .form-control,
+        .btn {
+            border-radius: 0;
+            border-color: $primary-light;
+        }
+        .form-control {
+            padding-left: 30px;
+            height: 60px;
+            @include font(inherit, 1.6rem, $primary-color, 300, 7.5rem, .28em);
+            background-color: transparent;
+            border-right-color: transparent;
+        }
+        .btn {
+            padding: 0 30px;
+            border-left-color: transparent;
+
+            @include hover {
+                background-color: $primary-color;
+                .subscribe__svg {
+                    fill: $secondary-color;
+                }
+            }
+            
+        }
+    }
+    
+}
+.form__vertical-line {
+    width: 1px;
+    height: 45px;
+    background-color: $primary-light;
+    margin-top: 7px;
+}
+.copy {
+    @include font(inherit, 1.1rem, $primary-color, 300, 4rem, .28em);
+    text-transform: uppercase;
+    padding: 60px 0;
+}

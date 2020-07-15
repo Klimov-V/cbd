@@ -40,6 +40,8 @@
         </div>
     </header>
 
+   
+
     <section class="section intro" style="background-image: url(img/img1.jpg);">
         <div class="intro__side-container">
             <div class="intro__side-line"></div>
@@ -50,12 +52,12 @@
                 <h2 class="intro__title">Enhancing Life Excelling in Care</h2>
                 <h3 class="intro__subtitle">Choose Wisely. Choose CBD.</h3>
                 
-                <a href="#" class="btn btn--intro">
-                    <span class="btn__text">Start Shopping</span>
-                    <span class="btn__line btn__line--intro"></span>
+                <a href="#" class="button button--intro">
+                    <span class="button__text">Start Shopping</span>
+                    <span class="button__line button__line--intro"></span>
                 </a>
                 <br>
-                <a href="#" class="btn btn__toshop">
+                <a href="#" class="button button__toshop">
                     <span class="toshop__text">See all products</span>
                     <svg width="20" height="20" class="toshop__icon">
                         <use xlink:href="#arrow"/>
@@ -69,7 +71,6 @@
             </svg> 
         </a>
     </section>
-
     <section class="section sponsors">
         <div class="sponsors__wraper">
             <h2 class="sponsors__title">We are what we are</h2>
@@ -162,6 +163,9 @@
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <svg width="20" height="20" class="accordion__svg">
+                          <use xlink:href="#plus"/>
+                        </svg> 
                         What is Cannabidiol (CBD)? 
                       </button>
                     </h2>
@@ -177,6 +181,9 @@
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <svg width="20" height="20" class="accordion__svg">
+                          <use xlink:href="#plus"/>
+                        </svg> 
                         Is Hemp-Derived Cannabidiol (CBD) Legal? 
                       </button>
                     </h2>
@@ -191,6 +198,9 @@
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <svg width="20" height="20" class="accordion__svg">
+                          <use xlink:href="#plus"/>
+                        </svg> 
                         Are there any negative side effects? 
                       </button>
                     </h2>
@@ -204,7 +214,10 @@
                 <div class="card">
                   <div class="card-header" id="headingFour">
                     <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <svg width="20" height="20" class="accordion__svg">
+                          <use xlink:href="#plus"/>
+                        </svg> 
                         Do you offer a return policy? 
                       </button>
                     </h2>
@@ -218,10 +231,72 @@
               </div>
         </div>
     </section>
+    <!-- //= partials/faq.html -->
+    <footer class="section footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer__colum">
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of Use</a></li>
+                        <li><a href="#" class="footer__link">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer__logo-wrap">
+                        <h2 class="footer__logo"><a href="#">cbd</a></h2>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <svg width="30" height="20" class="social__svg">
+                                    <use xlink:href="#facebook"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <svg width="30" height="20" class="social__svg">
+                                    <use xlink:href="#twitter"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <svg width="30" height="20" class="social__svg">
+                                    <use xlink:href="#youtube"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul> 
+                    <div class="footer__vertical-line"></div>
+                    <h4 class="subscribe__title">Subscribe to Newsletter</h4>
+                    <form action="#" class="subscribe__form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon">
+                            <div class="form__vertical-line"></div>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon">
+                                <svg width="30" height="30" class="subscribe__svg">
+                                    <use xlink:href="#arrow"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="copy">© 2018. CbD health.</div>
+                </div>
+                <div class="col-md-4 footer__colum">
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">SHIPPING INFO</a></li>
+                        <li><a href="#" class="footer__link">RETURNS / EXCHANGES</a></li>
+                        <li><a href="#" class="footer__link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 
 
-    <footer></footer>
     <svg style="display: none;">
         <symbol viewbox="0 0 512 512" id="search">
             <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"/>
@@ -242,9 +317,35 @@
                 c4.237,4.093,4.354,10.845,0.262,15.083c-0.086,0.089-0.173,0.176-0.262,0.262L252.744,370.279
                 C250.748,372.281,248.039,373.408,245.213,373.415z"/>
         </symbol>
-        <symbol viewbox="0 0 512 512" id=""></symbol>
-        <symbol viewbox="0 0 512 512" id=""></symbol>
-        <symbol viewbox="0 0 512 512" id=""></symbol>
+        <symbol viewbox="0 0 42 42" id="plus">
+            <polygon points="42,20 22,20 22,0 20,0 20,20 0,20 0,22 20,22 20,42 22,42 22,22 42,22 "/>
+        </symbol>
+        <symbol viewbox="0 0 96.124 96.124" id="facebook">
+            <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+        </symbol>
+        <symbol viewbox="0 0 512 512" id="twitter">
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+    			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+    			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+    			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+    			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+    			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+    			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+    			C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </symbol>
+        <symbol viewbox="0 0 512 512" id="youtube">
+            <path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
+                c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904
+                C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728
+                c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816
+                c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096
+                C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"/>
+        </symbol>
+        <!-- <symbol viewbox="0 0 512 512" id=""></symbol>
+        <symbol viewbox="0 0 512 512" id=""></symbol> -->
     </svg>
     
     

@@ -24,6 +24,9 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  @include hover {
+    color: inherit;
+  }
 }
 h1 {
   margin: 0;
@@ -50,7 +53,7 @@ h1 {
   }
 }
 
-.btn {
+.button {
   display: inline-flex;
   align-items: center;
   border: $border-width solid $border-color;
@@ -82,26 +85,17 @@ h1 {
       color: $primary-color;
       background-color: $secondary-color;
 
-      & .btn__line--intro {
+      & .button__line--intro {
           background-color: $primary-color;
         
       }
     }
     
   }
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  &-link {
-    border: none;
-    @include font(inherit, 1.8rem, $primary-color, 300, 7.5rem, .28em);
-    text-decoration: none;
-    &:hover {
-      color: $primary-hover;
-    }
-  }
 }
+// .btn {
+ 
+// }
 
 @import 'partials/header';
 @import 'partials/intro';
@@ -109,3 +103,4 @@ h1 {
 @import 'partials/about';
 @import 'partials/products';
 @import 'partials/faq';
+@import 'partials/footer';
