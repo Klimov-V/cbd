@@ -1,0 +1,44 @@
+.comments {
+    outline: 1px solid red;
+    background-color: $primary-light;
+}
+.coment {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 260px 0 320px;
+
+    .social__item {
+        margin: 50px 0;
+    }
+    .social__svg {
+        fill: #aab384;
+
+        @include hover {
+            fill: $primary-color;
+        }
+    }
+    &__blockquote {
+        max-width: 770px;
+        margin: 0 auto;
+        @include font(inherit, 2.2rem, $secondary-color, 300, 4rem, .2em);
+    }
+    &__author {
+        @include font(inherit, 2.4rem, $secondary-color, 400, 7.5rem, .2em);
+        text-transform: uppercase;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 45px;
+            height: 1px;
+            background-color: $secondary-color;
+            margin: 0 15px 10px;
+        }
+    }
+}
+.intro__side-container--comment {
+    bottom: 30%;
+    transform: rotateZ(90deg);
+}
