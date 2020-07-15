@@ -50,6 +50,7 @@ h1 {
 
   &__title {
     @include font(inherit, 3rem, $dark, 400, 7.5rem, .2em);
+    text-transform: uppercase;
   }
 }
 
