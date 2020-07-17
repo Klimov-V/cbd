@@ -19,25 +19,45 @@
         }
     }
 
-    &__tab {
-        display: none;
-    }
 }
 .tab {
     &__content {
-        display: flex;
+        display: block;
         justify-content: space-between;
-        padding-top: 80px;
+        padding-top: 30px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            padding-top: 80px;
+            text-align: left;
+        }
     }
+
+    &-content > .active {
+        display: block;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
     &__text {
-        max-width: 400px;
         max-height: 635px;
         overflow: hidden;
+        margin: 0 auto;
+        max-width:400px;
+
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
     }
     &__title{
         @include font($fz: 2.4rem, $fc: $dark, $lh: 4rem, $ls: .2em);
-        margin-top: 45px;
-        max-width: 300px;
+        
+        @media screen and (min-width: 768px) {
+            margin-top: 45px;
+            max-width: 300px;
+        }
     }
     &__paragraph {
         @include font($fz: 1.8rem, $fc: $primary-color, $fw:300, $lh: 4rem, $ls: .04em);
@@ -58,14 +78,36 @@
 }
 
 .nav {
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 568px) {
+        display: flex;
+        text-align-last: left;
+    }
     
     &-item {
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: .2em;
         color: $dark;
-        margin-right: 95px;
         border-bottom: $border-width solid #ced6af;
         margin-bottom: -1px;
+        display: block;
+        
+        @media screen and (min-width: 568px) {
+            margin-right: 45px;
+        }
+        @media screen and (min-width: 768px) {
+            margin-right: 95px;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 2.5rem;
+            margin-right: 95px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 3rem;
+            margin-right: 95px;
+        }
     }
     &-tabs &-link.active {
         border-color: transparent;
@@ -79,8 +121,4 @@
         color: $dark;
         @include tr;
     }
-}
-
-.tab-content > .active {
-    display: flex;
 }

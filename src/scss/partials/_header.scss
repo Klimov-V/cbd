@@ -8,9 +8,20 @@
     text-transform: uppercase;
     border-bottom: $border-width solid $border-color;
     z-index: 5;
+}
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
 
-    &--active {
+    &--pinned {
+        transform: translateY(0%);
         background-color: rgba(200, 200, 200, .7);
+    }
+    &--unpinned {
+        transform: translateY(-100%);
+    }
+    &--top {
+        background-color: transparent;
     }
 }
 
@@ -47,13 +58,6 @@
     &__list {
         display: flex;
     }
-    &__item {
-
-    }
-    &__link {
-        
-    }
-
 }
 .crosed {
     &:after {
@@ -71,9 +75,6 @@
         border-left: $border-width solid $border-color;
         position: relative;
     }
-    &__link {
-
-    }
 }
 .search {
     &__icon {
@@ -86,7 +87,6 @@
         padding: 5px 10px;
         margin: 0 0 0 15px;
         color: $secondary-color;
-        // visibility: hidden;
         position: relative;
         left: 60%;
         z-index: -1;

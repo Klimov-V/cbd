@@ -24,7 +24,11 @@
     }
     &__side-text {
         text-transform: uppercase;
-        @include font ($fz: 2.6rem, $lh: 55px, $ls: .08em);
+        @include font ($fz: 2rem, $lh: 55px, $ls: .08em);
+
+        @media screen and (min-width: 992px) {
+            font-size: 2.6rem;
+        }
     }
 
     &__inner {
@@ -32,18 +36,26 @@
         @include posA($left: none, $delta_x: 0);
     }
     &__title {
-        font-size: 5.5rem;
+        font-size: 3.5rem;
         line-height: 7.5rem;
         letter-spacing: .28em;
         text-transform: uppercase;
         font-weight: 400;
         margin: 0;
+
+        @media screen and (min-width: 992px) {
+            font-size: 5.5rem;    
+        }
     }
     &__subtitle {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         font-weight: 300;
         letter-spacing: .28em;
         margin-bottom: 60px;
+
+        @media screen and (min-width: 992px) {
+            font-size: 2.4rem;    
+        }
     }
 
     &__down {

@@ -13,8 +13,7 @@
 
     &__navigation {
         @include posA(null, 50%, -50%, 0);
-        // bottom: 0;
-        // margin-bottom: -2px;
+        z-index: 5;
     }
 
     &__arrow {
@@ -36,64 +35,4 @@
         }
     }
 
-
-    // &__arrow {
-    //     position: absolute;
-    //     top: 0;
-    //     bottom: 0;
-    //     padding: 20px;
-    //     background: none;
-    //     border: none;
-    //     color: $primary-color;
-    //     font-size: 2em;
-
-    //     @include tr;
-    //     @include hover {
-    //         transform: scale(1.2);
-    //         cursor: pointer;
-    //     }
-
-    //     &--prev {
-    //         left: 0;
-
-    //         i {
-    //             margin-left: -3px;
-    //         }
-    //     }
-
-    //     &--next {
-    //         right: 0;
-
-    //         i {
-    //             margin-right: -3px;
-    //         }
-    //     }
-    // }
-
-    // &__dots {
-    //     padding: 0;
-    //     margin: 0;
-    //     list-style: none;
-    //     text-align: center;
-
-    //     li {
-    //         display: inline-block;
-    //     }
-    // }
-
-    // &__dot {
-    //     display: inline-block;
-    //     width: 16px;
-    //     height: 16px;
-    //     border-radius: 50%;
-    //     background-color: $primary-color;
-    //     border: $border-width solid $secondary-color;
-
-    //     @include tr;
-    //     @include slider-hover {
-    //         background-color: $secondary-color;
-    //         border-color: $primary-color;
-    //         cursor: pointer;
-    //     }
-    // }
 }

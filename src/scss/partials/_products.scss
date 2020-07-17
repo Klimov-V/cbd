@@ -1,9 +1,16 @@
 .products {
     text-align: center;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 120px;
+    }
 
     .slider {
+
         &__arrow {
+            display: none;
+
             svg {
                 fill: $primary-color;
                 @include tr;
@@ -14,6 +21,10 @@
                 svg {
                     fill: $secondary-color;
                 }
+            }
+
+            @media screen and (min-width: 768px) {
+                display: inline-block;
             }
         }
     }
@@ -26,7 +37,6 @@
 .product {
     background-color: $secondary-color;
     max-width: 615px;
-    // margin: 0 auto;
 
     &__content {
         border: $border-width solid $primary-color;
@@ -34,8 +44,16 @@
         max-width: 615px;
     }
     &__title {
-        @include font(inherit, 1.8rem, $dark, 400, 7.5rem, .15em);
+        @include font(inherit, 1.4rem, $dark, 400, 4.5rem, .15em);
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 1.8rem;
+            line-height: 7.5;
+        }
     }
     &__img {
         width: 100%;
@@ -43,7 +61,7 @@
 
         &-wrap {
             max-width: 190px;
-            max-height: 260px;
+            max-height: 220px;
             margin: 60px auto;
         }
     }
@@ -55,9 +73,16 @@
         justify-content: space-between;
     }
     &__price {
-        @include font(inherit, 1.8rem, $dark, 400, 7.5rem, .15em);
+        @include font(inherit, 1.4rem, $dark, 400, 7.5rem, .15em);
         text-transform: uppercase;
         margin-left: 30px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 1.8rem;
+        }
     }
 
    

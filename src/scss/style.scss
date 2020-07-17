@@ -9,7 +9,15 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
+  scroll-behavior: smooth;
+
+  @media screen and (min-width: 768px) {
+    font-size: 9px;    
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 10px;    
+  }
 }
 body {
   @include font($primary-ff, 1.4rem, $secondary-color, $lh: 1.7, $ls: .2em);
@@ -49,8 +57,14 @@ h1 {
   position: relative;
 
   &__title {
-    @include font(inherit, 3rem, $dark, 400, 7.5rem, .2em);
+    @include font(inherit, 2.4rem, $dark, 400, 4.5rem, .2em);
     text-transform: uppercase;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+      line-height: 7.5rem;
+    }
   }
 }
 
@@ -58,17 +72,27 @@ h1 {
   display: inline-flex;
   align-items: center;
   border: $border-width solid $border-color;
-  @include font(inherit, 2rem, $secondary-color);
-  padding: 25px 40px;
+  @include font(inherit, 1.6rem, $secondary-color);
+  padding: 15px 25px;
   text-transform: uppercase;
 
   &__line {
     display: inline-block;
-    width: 45px;
+    width: 25px;
     height: 2px;
     background-color: $secondary-color;
-    margin-left: 20px;
+    margin-left: 10px;
     @include tr;
+
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+    padding: 25px 40px;
   }
 
   &__toshop {
@@ -88,14 +112,9 @@ h1 {
 
       & .button__line--intro {
           background-color: $primary-color;
-        
       }
-    }
-    
+    }    
   }
-
-
-
 }
 
 .btn {

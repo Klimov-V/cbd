@@ -15,18 +15,37 @@
         color: $dark;
         font-size: 2.4rem;
         letter-spacing: 0.2em;
+        margin-top: 20px;
+        
+        @media screen and (min-width: 992px) {
+            margin-top:0;
+        }
     }
     &__list {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
     }
     &__item + &__item {
-        margin-left: 50px;
+        
+
+        @media screen and (min-width: 992px) {
+            margin-left: 50px;
+        }
     }
     &__item {
         max-height: 65px;
         max-width: 135px;
+        margin-top: 50px;
+        
+        @media screen and (min-width: 992px) {
+            margin-top: 20px;
+        }
     }
 }
