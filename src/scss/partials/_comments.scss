@@ -1,6 +1,14 @@
 .comments {
-    outline: 1px solid red;
     background-color: $primary-light;
+
+    .slider {
+        position: relative;
+    
+        &__navigation {
+            bottom: 0;
+            margin-bottom: -2px;
+        }
+    }
 }
 .coment {
     text-align: center;
@@ -37,6 +45,8 @@
             margin: 0 15px 10px;
         }
     }
+
+    
 }
 .intro__side-container--comment {
     bottom: 30%;
