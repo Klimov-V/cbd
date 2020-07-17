@@ -10,6 +10,8 @@ var rigger       = require('gulp-rigger');
 var uglify       = require('gulp-uglify-es').default;
 var clean        = require('gulp-clean');
 
+const babel      = require('gulp-babel');
+
 var imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     zopfli       = require('imagemin-zopfli'),
@@ -46,6 +48,9 @@ gulp.task('js', function() {
     return gulp.src('src/js/main.js')
         .pipe(rigger())
         .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(uglify(/* options */))
         .pipe(rename({
             suffix: ".min"
