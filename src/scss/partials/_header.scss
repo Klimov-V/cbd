@@ -99,26 +99,28 @@
             fill: $primary-color;
         }
     }
-    &__input {
-        background: none;
-        border-radius: 50px;
-        border: $border-width solid $border-color;
-        padding: 5px 10px;
-        margin: 0 0 0 15px;
-        color: $secondary-color;
-        position: relative;
-        left: 60%;
-        z-index: -1;
-        @include tr;
+    // &__input {
+    //     background: none;
+    //     border-radius: 50px;
+    //     border: $border-width solid $border-color;
+    //     padding: 5px 10px;
+    //     margin: 0 0 0 15px;
+    //     color: $secondary-color;
+    //     position: relative;
+    //     left: 60%;
+    //     z-index: -1;
+    //     transform-origin: 15px 15px;
+    //     transform: scale(1);
+    //     @include tr;
 
-        &--visible {
-            visibility: visible;
-            position: relative;
-            left: 0;
-            z-index: 1;
-            @include tr;
-        }
-    }
+    //     &--visible {
+    //         visibility: visible;
+    //         position: relative;
+    //         left: 0;
+    //         z-index: 1;
+    //         @include tr;
+    //     }
+    // }
 }
 
 .togler {
