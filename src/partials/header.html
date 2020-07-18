@@ -1,6 +1,11 @@
 <header class="header">
     <nav class="navigation">
-        <ul class="navigation__list">
+        <a href="#" class="togler" onclick="toggleMenu(event)">
+            <svg width="32" height="32">
+                <use xlink:href="#menu"></use>
+            </svg>
+        </a>
+        <ul class="navigation__list dropdown">
             <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
             <li class="navigation__item"><a href="#products" class="navigation__link">products</a></li>
             <li class="navigation__item"><a href="#faq" class="navigation__link">faqs</a></li>

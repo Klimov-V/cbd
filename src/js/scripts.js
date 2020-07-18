@@ -9,8 +9,7 @@ headroom.init();
 
 let scrinWidth = window.screen.width,
     slidesValue = scrinWidth < 578 ? 1 : scrinWidth < 992 ? 2 : 3,
-    isCentered = scrinWidth < 992 ? false : true,
-    html = document.querySelector('body');
+    isCentered = scrinWidth < 992 ? false : true;
 
 
 
@@ -58,3 +57,8 @@ window.addEventListener('scroll', () => {
       index && link && link.classList.add("navigation__link--active");
     }
 });
+
+function toggleMenu(e) {
+    e.preventDefault();
+    document.body.classList.toggle('menu-opened');
+}
