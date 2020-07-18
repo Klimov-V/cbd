@@ -43,7 +43,7 @@ var productsSlider = new Swiper('#productsSlider', {
 
 window.addEventListener('scroll', () => {
     let activeLink = document.querySelector(".navigation__link--active");
-    // activeLink && activeLink.classList.remove("navigation__link--active");
+    activeLink && activeLink.classList.remove("navigation__link--active");
     let counter, sections = document.querySelectorAll("section");
     for (counter = 0; counter < sections.length; counter++) {
       let section = sections[counter];
@@ -55,7 +55,6 @@ window.addEventListener('scroll', () => {
       let index = sections[counter] && sections[counter].getAttribute("id"),
           link = document.querySelector('a[href="#' + index + '"]');
 
-          activeLink && activeLink.classList.remove("navigation__link--active");
       index && link && link.classList.add("navigation__link--active");
     }
 });
