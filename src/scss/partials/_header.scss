@@ -133,10 +133,22 @@
     @media screen and (min-width:992px) {
         display: none;
     }
-    .menu-opened &,
-    .login-opened & {
-        fill: $primary-color;
+
+    &--nav {
+        .menu-opened & {
+            fill: $primary-color;
+        }
     }
+    &--login {
+        .login-opened & {
+            fill: $primary-color;
+        }
+    }
+
+    // .menu-opened &,
+    // .login-opened & {
+    //     fill: $primary-color;
+    // }
 }
 
 .opened {
@@ -209,6 +221,7 @@
             opacity: 1;
             transform: translate(0, 0) scale(1);
             border-radius: 0;
+
         }
 
         @media screen and (min-width:992px) {
