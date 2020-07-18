@@ -62,3 +62,7 @@ function toggleMenu(e) {
     e.preventDefault();
     document.body.classList.toggle('menu-opened');
 }
+function toggleLogin(e) {
+    e.preventDefault();
+    document.body.classList.toggle('login-opened');
+}
