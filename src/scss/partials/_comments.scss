@@ -13,6 +13,8 @@
                 display: block;
             }
         }
+
+        
     }
 }
 .coment {
@@ -22,6 +24,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 5;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .7);
+    }
 
     @media screen and (min-width: 768px) {
         height: 800px;
@@ -72,7 +87,11 @@
     
 }
 .intro__side-container--comment {
-    bottom: 30%;
+    bottom: 20%;
     transform: rotateZ(90deg);
     z-index: 5;
+    @media screen and (min-width: 992px) {
+        font-size: 2.4rem;
+        bottom: 30%;
+    }
 }
