@@ -36,6 +36,7 @@
 
     &-content > .active {
         display: block;
+        // text-align: center;
         @media screen and (min-width: 768px) {
             display: flex;
         }
@@ -46,6 +47,7 @@
         overflow: hidden;
         margin: 0 auto;
         max-width:400px;
+        padding: 0 15px;
 
         @media screen and (min-width: 768px) {
             margin: 0;
@@ -71,7 +73,7 @@
         &-wrap {
             max-width: 570px;
             max-height: 300px;
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
             overflow: hidden;
         }
     }
@@ -81,7 +83,7 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: 568px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         text-align-last: left;
     }
@@ -94,9 +96,6 @@
         margin-bottom: -1px;
         display: block;
         
-        @media screen and (min-width: 568px) {
-            margin-right: 45px;
-        }
         @media screen and (min-width: 768px) {
             margin-right: 95px;
         }
@@ -109,6 +108,7 @@
             margin-right: 95px;
         }
     }
+    
     &-tabs &-link.active {
         border-color: transparent;
         border-bottom-color: $dark;

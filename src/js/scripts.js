@@ -15,10 +15,18 @@ let scrinWidth = window.screen.width,
 
 var productsSlider = new Swiper('#productsSlider', {
     loop: true,
-    slidesPerView: slidesValue,
-    centeredSlides: isCentered,
-    spaceBetween: 45,
-    
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 20,
+    breakpoints: {
+        576: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        992: {
+          slidesPerView: 3,
+        }
+    },
     
     navigation: {
         nextEl: '.slider__arrow--right',
@@ -26,18 +34,7 @@ var productsSlider = new Swiper('#productsSlider', {
     },
 })
 
-//  Этот закоментированный код должен динамически менять значение slidesPerView в слайдере
-//     и, соответственно, менять к-во отображаемых единовременно слайдов. Значение меняется, 
-//     но изменения в отображении слайдера появляются только после перезагрузки, а это и так происходит без данного кода.
 
-// window.addEventListener('scroll', () => {
-//     scrinWidth = window.screen.width;
-//     slidesValue = scrinWidth < 578 ? 1 : scrinWidth < 992 ? 2 : 3;
-//     console.log(slidesValue);
-//     console.log(scrinWidth);
-//     productsSlider.slidesPerView = slidesValue;
-//     console.log(`slidesPerView - ${productsSlider.slidesPerView}`);
-// });
 
 
 window.addEventListener('scroll', () => {
